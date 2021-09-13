@@ -1,0 +1,784 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritika's Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<header>
+    <nav class="navigation-bar" id="nav-bar">
+        
+        <div class="logo">
+            
+            <p><a href="index.html"><span id="sp1"><i class="fas fa-play" ></i></span>RITIKA's <br><span id="sp2">Music Player</span></a></p>
+        </div>
+        <div class="fav">
+            <p>Favourties</p>
+        </div>
+        
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..">
+            <i class="fas fa-microphone"></i>
+        </div>
+
+        <div class="notifications">
+            <i class="far fa-bell fa-2x"> </i>
+        </div>
+        <div class="profile">
+            <i class="fas fa-user fa-2x"></i>
+        </div>
+    </nav>
+</header>
+<body>
+    <!--- Main section-->
+    <main>
+        <!-- These buttons are visible when screen size is less then 1112px to direct the user to either the playlist section or the home/ carousel section of the page-->
+        <button id="take-me"> <a href="#playlist-final">Playlist</a></button><br><br>
+        <button id="take-me2"> <a href="#top-card" >Home</button></a> 
+        <!-- images for the carousel-->
+           <div class="top_cards" id="top-card">
+               <img src="https://i.pinimg.com/236x/eb/2c/d0/eb2cd01d96d517fec395d1771404f145.jpg" alt="picture1">
+               <img src="https://i.pinimg.com/236x/b6/ac/10/b6ac1009c9f45fdb97c32144a3642960.jpg" alt="picture2">
+               <img src="https://i.pinimg.com/236x/ae/80/01/ae80017dffc6230c64d2c1e164821413.jpg" alt="picture3">
+           </div>
+
+            <div class="latest-release ">
+                <h2>Latest Release</h2>
+                <!-- this box contains the whole content of latest release section-->
+                <div class="lr-box">
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/ba/60/38/ba6038aeec797aa1e682947bd7c62324.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>this is me trying  <br><span>Jul 24,2020</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox1"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox1">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  3:15</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/e2/7e/32/e27e32df5745844076c09e7395f84125.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>Earned It<br><span>Jul 24,2020</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox2">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  3:02</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>Skin <br><span>Jul 24,2020</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox3">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  3:45</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/ba/60/38/ba6038aeec797aa1e682947bd7c62324.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>Illicit Affairs <br><span>Jul 24,2020</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox4">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  3:13</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/e2/7e/32/e27e32df5745844076c09e7395f84125.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>Earrned it <br><span>Mar 24,2020</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox5"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox5">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  3:02</p>
+                        </div>
+                    </div>
+                    <div class="card-1">
+                        <div class="img-S1">
+                           <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg" alt="Picture">
+                        </div>
+                        <div class="text-S1" id="t-style1">
+                            <p>Skin <br><span>Jun 13,2021</span> </p>
+                        </div>
+                        <div class="options">
+                            <label for="latest-release-checkbox6"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox6">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="page2.html">PlayNow</a></p>
+                                <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                    <hr>
+                                </div>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>  4:02</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="popular-artist">
+                <h2>Popular Artist</h2>
+                <div class="pa-box">
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/c9/8f/81/c98f81bd4d7d8d9ba1bec9c1d92909a2.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Taylor Swift</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="artist">
+                    <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/24/41/e4/2441e41ee52501040b0bb43a7770eb2d.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Lana Del Ray</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                    <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/83/d9/5f/83d95f4454ba60642f86b3f51ea342fa.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>The Weeknd</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                    <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/76/82/f6/7682f667a7f5cc4ea12153e713e09bfd.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Shawn Mendes</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/4f/aa/4d/4faa4d3109b0fdcd05cec8f592a0306d.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Billie Eilish</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/a8/35/79/a83579277119eeba1b63fde5dd7153a8.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Zayn Malik</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/7e/08/9b/7e089b39b74b06c7ebfa6d7a15988073.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Michele Morrone</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/b1/d2/9a/b1d29ad014edcd82d95936de60f15bea.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Sabrina Carpenter</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/ba/ec/6e/baec6e083a3af9cc7e0ffe47aaa17184.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Travis Scott</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="artist">
+                        <a href="page2.html">
+                        <div class="img-S2">
+                            <img src="https://i.pinimg.com/236x/d7/45/1d/d7451d69f6b4bc606a2bec2fff33e7fd.jpg" alt="Artist's Picture">
+                        </div>
+                        <div class="text-S2" id="t-style1">
+                            <p>Olivia Rodrigo</p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="themes">
+                <h2>Themes</h2>
+                <div class="themes-box">
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/236x/4a/5d/99/4a5d99f69624eb0ad5becfcd52b3f75d.jpg" alt="party theme">
+                        <div class="themes-text"><h2>Party</h2></div>
+                    </div>
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/236x/4e/75/e4/4e75e4efceb1f42c6da3cae6dd2e6d60.jpg" alt="electronic theme">
+                        <div class="themes-text"><h2>Electronic</h2></div>
+                    </div>
+                    <div class="img-box">
+                        <img src="https://i.pinimg.com/236x/c9/f0/7b/c9f07bb66b88d4f2ee10a016ec4aa4ac.jpg" alt="travel theme">
+                        <div class="themes-text"><h2>Travel</h2></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="stations">
+                <div class="stations-div">
+                    <div id="div1">
+                        <div id="div2">
+                            <div id="div3">
+                               <span><i class="fas fa-play fa-2x"  ></i></span> 
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stations-box">
+                    <div class="sb-img">
+                        
+                        <p>Sad</p>
+                    </div>
+                    <div class="sb-img">
+                        
+                        <p>Love</p>
+                    </div>
+                    <div class="sb-img">
+                        
+                        <p>Rain</p>
+                    </div>
+                    <div class="sb-img">
+                        
+                        <p>Date</p>
+                    </div>
+                    <div class="sb-img">
+                        
+                        <p>Retro</p>
+                    </div>
+                    <div class="sb-img">
+                        <p>Gym</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-french">
+                <h2>Latest French</h2>
+                <div class="lf-box">
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/ad/ad/a7/adada7767d2a78f4004bf352f3f191b5.jpg" alt="un homme">
+                        </div>
+                        <div class="text2">
+                            <p>Un homme
+                                <br><span>Jul 17, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/99/d7/ba/99d7ba28f25329744097c561359cd225.jpg" alt="Habibi">
+                        </div>
+                        <div class="text2">
+                            <p>Habibi
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/b3/30/04/b330046695027632c6890eac26b60f16.jpg" alt=""le reste>
+                        </div>
+                        <div class="text2">
+                            <p>Le reste
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/3d/6c/08/3d6c08ec470960f050b57bb5a7b52b1f.jpg" alt="jtdo">
+                        </div>
+                        <div class="text2">
+                            <p>Je t'aime de ouf
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/30/9b/56/309b56ec300c0524be9698fadbdefca6.jpg" alt="voilà">
+                        </div>
+                        <div class="text2">
+                            <p>Voilà
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/18/1d/d1/181dd11c3dd9ba5bc8628b452bd8942b.jpg" alt="silence">
+                        </div>
+                        <div class="text2">
+                            <p>Silence
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="latest-english">
+                <h2>Latest English</h2>
+                <div class="lf-box">
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/4a/e7/25/4ae7257f45156c61c67d89fd5f01bcc6.jpg" alt="un homme">
+                        </div>
+                        <div class="text2">
+                            <p>Good for you
+                                <br><span>Jul 17, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/2d/b1/41/2db14103161241309fba309a074929ed.jpg" alt="song">
+                        </div>
+                        <div class="text2">
+                            <p>Hurricane
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg" alt=""le reste>
+                        </div>
+                        <div class="text2">
+                            <p>Skin
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/4a/e7/25/4ae7257f45156c61c67d89fd5f01bcc6.jpg" alt="un homme">
+                
+                        </div>
+                        <div class="text2">
+                            <p>happier
+                                <br><span>Sept 01, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/564x/24/2a/57/242a570d0f52e4d1227478463f6cca6c.jpg" alt="voilà">
+                        </div>
+                        <div class="text2">
+                            <p>Champagne Poetry
+                                <br><span>Sept 03, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="img-S3">
+                            <img src="https://i.pinimg.com/236x/27/03/76/270376947cae647858591ffc10aefcde.jpg" alt="silence">
+                        </div>
+                        <div class="text2">
+                            <p>Skinny Dipping
+                                <br><span>Jul 18, 2021</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+    </main>
+    <aside >
+        <div class="top" id="playlist-final">
+            <h2>Playlist</h2>
+            <h4 id="playlist-queue"> <a href="#queue-options-box">Queue <span id="Queue-icon"><i class="fas fa-caret-down"></i></span> </a> </h4>
+        </div>
+        <!-- When user clicks on queue, this will be shown-->
+
+            <div class="queue-options" id="queue-options-box">
+                <p><a href style="color:rgb(206, 206, 206);">Playlists</a></p>
+                <hr>
+                <p><a href="page2.html" style="color:rgb(207, 207, 207);">Favourite songs</a></p>
+                <hr>
+                <p><a href="#" style="color:rgba(27, 24, 24, 0.678); font-weight:bolder;">Close</a></p>
+            </div>
+        <div class="section-box">
+            <div class="card4">
+                <div class="text3">
+                    <p>01</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/18/1d/d1/181dd11c3dd9ba5bc8628b452bd8942b.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Silence  <br> <span> Camélia Jordana </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="text3">
+                    <p>02</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Skin  <br> <span> Sabrina Carpenter</span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>03</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/ba/60/38/ba6038aeec797aa1e682947bd7c62324.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Silence  <br> <span> Illicit Affairs </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>04</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/e2/7e/32/e27e32df5745844076c09e7395f84125.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Earned it   <br> <span> The Weeknd </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>05</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/27/03/76/270376947cae647858591ffc10aefcde.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Skinny Dipping  <br> <span> Sabrina Carpenter </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>06</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/ba/60/38/ba6038aeec797aa1e682947bd7c62324.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Cardigan  <br> <span> Taylor Swift </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>07</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/18/1d/d1/181dd11c3dd9ba5bc8628b452bd8942b.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Silence  <br> <span> Camélia Jordana </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>08</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Skin  <br> <span> Sabrina carpenter</span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>09</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/e2/7e/32/e27e32df5745844076c09e7395f84125.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Earned it  <br> <span> The Weeknd </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>10</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/27/03/76/270376947cae647858591ffc10aefcde.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Skinny Dipping  <br> <span> Sabrina Carpenter </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>11</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/18/1d/d1/181dd11c3dd9ba5bc8628b452bd8942b.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Silence  <br> <span> Camélia Jordana </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>12</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/e2/7e/32/e27e32df5745844076c09e7395f84125.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>Earned it  <br> <span> The Weeknd </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div><div class="card4">
+                <div class="text3">
+                    <p>13</p>
+                </div>
+                <div class="p-img">
+                    <img src="https://i.pinimg.com/236x/ba/60/38/ba6038aeec797aa1e682947bd7c62324.jpg" alt="song picture">
+                </div>
+                <div class="text4">
+                    <p>exile(ft. Bon Iver)  <br> <span> Camélia Jordana </span></p>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            
+        </div>
+    
+    </aside>
+
+    <footer>
+        <div class="song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="https://i.pinimg.com/236x/1e/69/86/1e69868e2391f1aa122e2f50f52f8e74.jpg">
+            </div>
+            <div class="song-desc">
+                <p>Skin <br> <span>Sabrina Carpenter</span></p>
+                
+                <!-- heart icon -->
+            </div>
+            <div class="heart-icon-footer">
+                    <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <!-- here are the controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div id="pause-icon"><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="15" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

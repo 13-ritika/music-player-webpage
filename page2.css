@@ -1,0 +1,640 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("bg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+h1,h2,h4{
+    margin: 0;
+    color:  rgb(238, 235, 231);
+    letter-spacing: 0.1em;
+ }
+ a{
+     text-decoration: none;
+     color: inherit;
+ }
+ #take-me, #take-me2{
+    position: fixed;
+    padding: 5px;
+    top: 70px;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    right: 2px;
+    visibility: hidden;
+    border: none;
+    font-size: 15px;
+    background-color: hotpink;
+    color: lavenderblush;
+}
+#take-me2{
+    top: 110px;
+}
+ header{
+    position: sticky;
+}
+.navigation-bar{
+    
+    width: 100%;
+    height: auto;    
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    z-index: 1; 
+    color: rgb(238, 235, 231);
+}
+.navigation-bar span{
+    text-align: right;
+}
+/* Working the logo Part*/
+.logo{
+    margin: 0;
+    padding-left: 20px;
+    text-align: center;
+}
+.logo p{
+    margin: 0;
+    font-size: 25px;
+    overflow: hidden;
+    letter-spacing: 0.2rem;
+}
+/* Styling play logo*/
+#sp1{
+    margin-right:0.6rem ;
+    margin-bottom: 0.2rem;
+}
+/* Styling Music player text*/
+#sp2{
+    font-size: 15px;
+    letter-spacing: 0.4rem;
+    line-height: 1.5rem;
+}
+/* Favourties*/
+.fav{
+    padding: 5px;
+}
+.fav p{
+    margin: auto;
+    min-width: 100px;
+    font-size: 1.2rem;
+    color: /*rgba(252, 117, 162);*/ blanchedalmond;
+    letter-spacing: 0.2rem;
+
+}
+
+/* Search bar */
+.search-bar{
+    height: 2rem;
+    min-width: 120px;
+    width: 20em;
+    background-color: rgb(238, 235, 231);
+    border-radius: 20px;
+    display: flex;   
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: black;
+    
+}
+.search-bar input{
+    width: 18rem;
+    min-width: 70px;
+    padding: 0 0.6em;
+    background-color: transparent;
+    border: none;
+    outline: none;  
+}
+
+/* Notification*/
+.notifications{
+    text-align: right;
+}
+
+/* Profile*/
+.profile{
+    padding-right: 20px;
+    text-align: right;
+}
+
+main{
+    padding: 0 20px;
+    display: inline-block;
+    width: 65%;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+main::-webkit-scrollbar{
+    display: none;
+}
+/* Artist Description */
+.artist-description{
+    margin: 1rem;
+    display: flex;
+    background-color: rgb(14, 14, 14);
+}
+/* Button for play all*/
+button{
+    width: 8vw;
+    height: 3vw;
+    border-radius: 10px;
+    border: none;
+    margin-right: 2rem;
+    font-size: 15px;
+    color: blanchedalmond;
+    letter-spacing: 0.1rem;
+}
+#play{
+    background-image: linear-gradient(rgba(218, 36, 157, 0.705),rgba(162, 22, 218, 0.712),60%,rgba(29, 15, 218, 0.671));
+}
+#follow{
+    background-image: linear-gradient(rgba(243, 17, 17, 0.671),rgba(240, 107, 66, 0.712),60%,rgba(218, 59, 133, 0.671));
+}
+.description{
+    padding-left: 2rem;
+    color: rgba(248, 236, 219, 0.7);
+    width: 37vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.description p{
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+.description h1{
+    margin-top: 1.5rem;
+    margin-bottom: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+}
+#sub-heading{
+    font-size: 15px;
+    color: rgba(245, 245, 245, 0.452);
+    letter-spacing: 0.2rem;
+    
+}
+.description span{
+    color: rgba(245, 245, 245, 0.452);
+    letter-spacing: 0.1rem;
+    
+}
+.artist-image{
+    height: 280px;
+    width: 320px;
+    overflow: hidden;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(218, 31, 224, 0.2),20%,rgba(244, 247, 121, 0.2)),
+    url("https://i.pinimg.com/564x/b3/40/b0/b340b086b37ebd198cdb680825a8e415.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+}
+
+/* Songs list in main section*/
+.song-list-main{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.artist-image2 img{
+    position: relative;
+}
+.box{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background-color: rgba(173, 36, 36, 0.5);
+    display: none;
+    top: 28.4vw;
+    left: 9.5%;
+}
+.play-icon{   
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: white;
+}
+.artist-image2:hover .play-icon{
+    opacity: 1;
+    
+}
+.artist-image2:hover .box{
+    display: block;
+    
+}
+.song-card1{
+    margin: 0.2rem;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    background-color: rgba(14,14,14,0.8);
+}
+.song-card1:hover{
+    background-color: rgba(31, 31, 31, 0.781);
+}
+.number{
+    padding-left: 1.2rem;
+    padding-top: 0.6rem;
+    color: whitesmoke;
+}
+.artist-image2{
+    height: 70px;
+    width: 70px;
+}
+.song-card1 img{
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.song-name{
+    width: 20vw;
+    font-size: 17.75px;
+    color: whitesmoke;
+    letter-spacing: 0.05rem;
+}
+.song-name span{
+    font-size: 12px;
+    color: rgba(245, 245, 245, 0.452);
+    
+}
+.time-duration{
+    width: 15vw;
+    color: rgba(245, 245, 245, 0.452);
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+.icon{
+    width: 4vw;
+    text-align: left;
+    color: whitesmoke;
+    padding-top: 1.5rem;
+    margin-right: 0.8rem;
+    display: flex;
+    font-size: 19px;
+    justify-content: space-around;
+}
+.heart-icon:hover{
+    color: rgb(248, 97, 147);
+}
+.add-icon:hover{
+    color: rgb(90, 43, 199);
+}
+
+/* aside section*/
+aside{
+    padding: 5px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+aside::-webkit-scrollbar{
+    display: none;
+}
+/* Similar Artist Section*/
+.similar-artists{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;  
+    position: relative;
+    height: 40%;
+}
+.top-section{
+    padding: 0 , 5px;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: black;
+}
+.similar-artists-box{
+    padding-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.similar-artists-card{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0.4rem;
+    margin-left: 1rem;
+}
+.similar-artists-card img{ 
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.similar-artists-card:hover{
+    background-color: rgba(31, 31, 31, 0.781);}
+
+.similar-artists-name{
+    width: 14vw;
+    font-size: 15;
+}
+.similar-artists-name p{
+    color: whitesmoke;
+    font-weight: 400;
+}
+.similar-artists-name span{
+    color: rgba(245, 245, 245, 0.452);
+}
+.similar-artists-more{
+    width: 4vw;
+}
+.similar-artists-more p{
+    color: rgba(245, 245, 245, 0.452);
+    margin-top: 0.1rem;
+    text-align:  center;  
+}
+.similar-artists-more #more{
+    padding: 0;
+}
+
+/* Recently Played Division*/
+.recently-played{
+    margin: 0.5rem;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height:55%;
+}
+.recently-played-top{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+   
+}
+.recently-played-top h1,h5{
+    margin-bottom: 0;
+}
+.recently-played-box{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.recently-played-card{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0.2rem;
+    margin-left: 1rem;
+    background-color: rgba(14,14,14,0.8);
+}
+.recently-played-card:hover{
+    background-color: rgba(224, 77, 138, 0.8);
+}
+.recently-played img{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.recently-played-name{
+    width: 10vw;
+}
+.recently-played-name span{
+    color: rgba(245, 245, 245, 0.452);
+    font-size: 10px;
+}
+
+/* Footer starts*/
+footer {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 65px;
+	background-color:rgb(39, 39, 39);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+    z-index: 6;
+    color: whitesmoke;
+}
+/* footer is divided into 3 sections */
+/* first section of the footer */
+.song-description {
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+.song-description span{
+    color: darkgray;
+    font-size: 13px;
+}
+/* the song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart icon */
+.heart-icon-footer {
+    color: darkgray;
+    font-size: 15px;
+    width: 4vw;
+    padding-top: 10px;
+}
+/* song decscription */
+.song-desc {
+    width: 13vw;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song artist */
+.song-desc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/*  second section of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.controls div{
+    width: 3rem;
+    text-align: center;
+}
+#pause-icon{
+    font-size: 35px;
+}
+/* main song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+.time {
+	margin: 0px 10px;
+}
+/* adjusting the slider */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+    height: 4px;
+    border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+.slider:hover {
+	opacity: 1;
+}
+/* these are for styling and adjusting long-slider */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+	height: 15px;
+	appearance: none;
+	border-radius: 50%;
+    background: #ff68de;
+	cursor: pointer;
+}
+/* the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+/* third section of the footer */
+/* this contains the extra icons and slider for volume */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+@media only screen and (max-width: 1024px){
+    main,aside{
+        width: 95%;
+        padding: 5px;
+        margin: 5px
+    }
+    main{
+        height: auto;
+    }
+    aside{
+        height: auto;
+        vertical-align: bottom;
+        margin-top: 3rem;
+    }
+    
+    #take-me, #take-me2
+    
+    {
+        z-index: 2;
+        visibility: visible;
+    }    
+    }
+   
+    @media only screen and (max-width: 676px){
+        .fav p {
+            font-size: 15px;
+            letter-spacing: 0.1rem;
+        }  
+        #sp1,#sp2{
+            font-size: 10px;
+            line-height: 14px;
+        } 
+        .profile{
+            padding-left:10px ;
+        }
+        
+        .card-1{
+            width: 100%;
+        }
+        .text-S1{
+            width: 24em;
+            padding-left: 2.0em;
+        }
+        .song-description{
+            width: 30%;
+            font-size: 14px;
+        }
+        .song-description span{
+            font-size: 10px;
+        }
+        .controls{
+            width: 45%;
+            font-size: 10px;
+        }
+        .extras{
+            width: 25%;
+            font-size: 14px;
+        }
+        }
+
+
+
+
