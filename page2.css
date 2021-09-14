@@ -26,6 +26,7 @@ h1,h2,h4{
      text-decoration: none;
      color: inherit;
  }
+ /* These are the buttons that become visible when the screen width is less than 1024px*/
  #take-me, #take-me2{
     position: fixed;
     padding: 5px;
@@ -200,7 +201,7 @@ button{
     overflow: hidden;
     object-fit: cover;
     background-image: linear-gradient(rgba(218, 31, 224, 0.2),20%,rgba(244, 247, 121, 0.2)),
-    url("https://i.pinimg.com/564x/b3/40/b0/b340b086b37ebd198cdb680825a8e415.jpg");
+    url("artist-image.png");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center;
@@ -215,23 +216,23 @@ button{
     justify-content: center;
     
 }
-.artist-image2 img{
-    position: relative;
-}
+
 .box{
     height: 60px;
     width: 60px;
-    position: absolute;
-    background-color: rgba(173, 36, 36, 0.5);
+    background-color: rgba(230, 45, 147, 0.486);
     display: none;
-    top: 28.4vw;
-    left: 9.5%;
+    position: relative;
+    top: -93%;
+    left: 7%;
+    z-index: 2;
+    
 }
 .play-icon{   
     opacity: 0;
-    position: absolute;
     top: 35%;
     left: 35%;
+    position: relative;
     color: white;
 }
 .artist-image2:hover .play-icon{
@@ -441,6 +442,7 @@ footer {
     z-index: 6;
     color: whitesmoke;
 }
+
 /* footer is divided into 3 sections */
 /* first section of the footer */
 .song-description {
@@ -634,7 +636,3 @@ footer {
             font-size: 14px;
         }
         }
-
-
-
-
