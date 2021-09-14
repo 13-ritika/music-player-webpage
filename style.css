@@ -133,8 +133,7 @@ main::-webkit-scrollbar{
 /* top card */
 .top_cards{
     height: 33vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
