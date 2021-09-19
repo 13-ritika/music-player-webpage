@@ -130,30 +130,41 @@ main::-webkit-scrollbar{
 }
 
 /*carousel of the main section*/
-/* top card */
-.top_cards{
+/* carousel */
+
+.carousel{
     height: 33vh;
     padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 1rem;
-    background-image: linear-gradient(45deg,rgba(0,0,0,0.5),rgba(83, 81, 85, 0.5),rgba(122, 91, 107, 0.5),rgba(0,0,0,0.5));
+    background-image: linear-gradient(45deg,rgba(0,0,0,0.5),rgba(42, 41, 43, 0.5),rgba(59, 44, 52, 0.5),rgba(0,0,0,0.5));
 }
-.top_cards img{
+#car-1{
+    z-index: 8;
+}
+#car-2{
+    z-index: 7;
+    width: 650px;
+}
+#car-3{
+    z-index: 8;
+}
+.carousel img{
     height: 250px;
-    width: 250px;
+    width: 300px;
     overflow: hidden;
     object-fit: cover;
 }
-.top_cards img:hover{
-    height: 300px;
-    width: 300px;
+.carousel img:hover{
+    width: 650px;
+    min-width: 400px;
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-    transition: 0.4s ease-in-out;
-    z-index: 1;
-    
+    transition: all 1s ease-in-out;
+    z-index: 0.5s; 
 }
+
 /* Latest Release */
 .latest-release{
     position: relative;
@@ -183,14 +194,43 @@ main::-webkit-scrollbar{
 .card-1:hover{
     box-shadow: 0px 0px 6px 1px rgba(230, 196, 196, 0.3);
 }
-.card-1 img:hover{
-    opacity: 0.5;
-}
-.lr-box img{
+
+.img-S1 img{
     height: 100px;
     width: 100px;
     overflow: hidden;
     object-fit: cover;
+}
+.img-S1{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(230, 45, 147, 0.486);
+    display: none;
+    position: relative;
+    z-index: 2;
+    top: -100%;
+    
+}
+.play-icon{ 
+    font-size: 20px;  
+    opacity: 0;
+    position: relative;
+    color: white;
+    top: 40%;
+    left: 42%;
+}
+.img-S1:hover .play-icon{
+    opacity: 1;
+    
+}
+.img-S1:hover .box{
+    display: block;
+    
 }
 
 .text-S1{
