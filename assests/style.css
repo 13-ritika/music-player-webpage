@@ -633,6 +633,7 @@ hr {
 }
 #playlist-queue{
     color: rgba(252, 117, 162);
+    z-index: 2; 
 }
 /* Index number of playlist*/
 .text3{
